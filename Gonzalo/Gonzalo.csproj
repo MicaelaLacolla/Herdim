@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93A06ECA-AD04-46A4-85D2-A335FF07F8F5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gonzalo</RootNamespace>
+    <AssemblyName>Gonzalo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="abm.aspx" />
+    <Content Include="abmInmuebles.aspx" />
+    <Content Include="anuncio.aspx" />
+    <Content Include="Casas.aspx" />
+    <Content Include="Departamentos.aspx" />
+    <Content Include="estilos\css\bootstrap.min.css" />
+    <Content Include="estilos\css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="estilos\css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="estilos\css\bootstrap\mixins\_visibility.css" />
+    <Content Include="estilos\css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="estilos\css\bootstrap\_media.css" />
+    <Content Include="estilos\css\style.css" />
+    <Content Include="estilos\images\logo.jpg" />
+    <Content Include="estilos\index.html" />
+    <Content Include="estilos\js\bootstrap.min.js" />
+    <Content Include="estilos\js\jquery.min.js" />
+    <Content Include="estilos\js\main.js" />
+    <Content Include="estilos\js\popper.js" />
+    <Content Include="estilos\Login\css\bootstrap.min.css" />
+    <Content Include="estilos\Login\css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="estilos\Login\css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="estilos\Login\css\bootstrap\mixins\_transition.css" />
+    <Content Include="estilos\Login\css\bootstrap\mixins\_visibility.css" />
+    <Content Include="estilos\Login\css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="estilos\Login\css\bootstrap\_media.css" />
+    <Content Include="estilos\Login\css\Login.css" />
+    <Content Include="estilos\Login\images\bg-1.jpg" />
+    <Content Include="estilos\Login\index.html" />
+    <Content Include="estilos\Login\js\bootstrap.min.js" />
+    <Content Include="estilos\Login\js\jquery.min.js" />
+    <Content Include="estilos\Login\js\main.js" />
+    <Content Include="estilos\Login\js\popper.js" />
+    <Content Include="estilos\Login\main.html" />
+    <Content Include="Login.aspx" />
+    <Content Include="Lotes.aspx" />
+    <Content Include="Nosotros.aspx" />
+    <Content Include="paginados.aspx" />
+    <Content Include="VentaOalquiler.aspx" />
+    <Content Include="VerDpt.aspx" />
+    <Content Include="VerLote.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abm.aspx.cs">
+      <DependentUpon>abm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abm.aspx.designer.cs">
+      <DependentUpon>abm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="abmInmuebles.aspx.cs">
+      <DependentUpon>abmInmuebles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abmInmuebles.aspx.designer.cs">
+      <DependentUpon>abmInmuebles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="anuncio.aspx.cs">
+      <DependentUpon>anuncio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anuncio.aspx.designer.cs">
+      <DependentUpon>anuncio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Casas.aspx.cs">
+      <DependentUpon>Casas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Casas.aspx.designer.cs">
+      <DependentUpon>Casas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos.aspx.cs">
+      <DependentUpon>Departamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departamentos.aspx.designer.cs">
+      <DependentUpon>Departamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes.aspx.cs">
+      <DependentUpon>Lotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lotes.aspx.designer.cs">
+      <DependentUpon>Lotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros.aspx.cs">
+      <DependentUpon>Nosotros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros.aspx.designer.cs">
+      <DependentUpon>Nosotros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginados.aspx.cs">
+      <DependentUpon>paginados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginados.aspx.designer.cs">
+      <DependentUpon>paginados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagmaestra.Master.cs">
+      <DependentUpon>pagmaestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagmaestra.Master.designer.cs">
+      <DependentUpon>pagmaestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VentaOalquiler.aspx.cs">
+      <DependentUpon>VentaOalquiler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VentaOalquiler.aspx.designer.cs">
+      <DependentUpon>VentaOalquiler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerDpt.aspx.cs">
+      <DependentUpon>VerDpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerDpt.aspx.designer.cs">
+      <DependentUpon>VerDpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerLote.aspx.cs">
+      <DependentUpon>VerLote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerLote.aspx.designer.cs">
+      <DependentUpon>VerLote.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pagmaestra.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="estilos\.DS_Store" />
+    <None Include="estilos\css\.DS_Store" />
+    <None Include="estilos\css\bootstrap\.DS_Store" />
+    <None Include="estilos\css\bootstrap\mixins\.DS_Store" />
+    <None Include="estilos\fonts\.DS_Store" />
+    <None Include="estilos\images\.DS_Store" />
+    <None Include="estilos\js\.DS_Store" />
+    <None Include="estilos\Login\.DS_Store" />
+    <None Include="estilos\Login\css\.DS_Store" />
+    <None Include="estilos\Login\css\bootstrap\.DS_Store" />
+    <None Include="estilos\Login\css\bootstrap\mixins\.DS_Store" />
+    <None Include="estilos\Login\fonts\.DS_Store" />
+    <None Include="estilos\Login\images\.DS_Store" />
+    <None Include="estilos\Login\js\.DS_Store" />
+    <None Include="estilos\Login\scss\.DS_Store" />
+    <None Include="estilos\Login\scss\bootstrap\.DS_Store" />
+    <None Include="estilos\Login\scss\bootstrap\bootstrap-grid.scss" />
+    <None Include="estilos\Login\scss\bootstrap\bootstrap-reboot.scss" />
+    <None Include="estilos\Login\scss\bootstrap\bootstrap.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_alert.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_background-variant.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_badge.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_border-radius.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_box-shadow.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_breakpoints.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_buttons.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_caret.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_clearfix.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_deprecate.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_float.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_forms.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_gradients.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_grid-framework.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_grid.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_hover.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_image.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_list-group.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_lists.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_nav-divider.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_pagination.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_reset-text.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_resize.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_screen-reader.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_size.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_table-row.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_text-hide.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_text-truncate.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_transition.scss" />
+    <None Include="estilos\Login\scss\bootstrap\mixins\_visibility.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_align.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_background.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_borders.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_clearfix.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_display.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_embed.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_flex.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_float.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_overflow.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_position.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_screenreaders.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_shadows.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_sizing.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_spacing.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_stretched-link.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_text.scss" />
+    <None Include="estilos\Login\scss\bootstrap\utilities\_visibility.scss" />
+    <None Include="estilos\Login\scss\bootstrap\vendor\_rfs.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_alert.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_badge.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_breadcrumb.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_button-group.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_buttons.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_card.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_carousel.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_close.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_code.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_custom-forms.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_dropdown.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_forms.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_functions.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_grid.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_images.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_input-group.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_jumbotron.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_list-group.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_media.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_mixins.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_modal.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_nav.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_navbar.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_pagination.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_popover.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_print.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_progress.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_reboot.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_root.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_spinners.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_tables.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_toasts.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_tooltip.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_transitions.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_type.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_utilities.scss" />
+    <None Include="estilos\Login\scss\bootstrap\_variables.scss" />
+    <None Include="estilos\Login\scss\style.scss" />
+    <None Include="estilos\scss\.DS_Store" />
+    <None Include="estilos\scss\bootstrap\.DS_Store" />
+    <None Include="estilos\scss\bootstrap\bootstrap-grid.scss" />
+    <None Include="estilos\scss\bootstrap\bootstrap-reboot.scss" />
+    <None Include="estilos\scss\bootstrap\bootstrap.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_alert.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_background-variant.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_badge.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_border-radius.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_box-shadow.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_breakpoints.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_buttons.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_caret.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_clearfix.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_deprecate.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_float.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_forms.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_gradients.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_grid-framework.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_grid.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_hover.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_image.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_list-group.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_lists.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_nav-divider.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_pagination.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_reset-text.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_resize.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_screen-reader.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_size.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_table-row.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_text-hide.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_text-truncate.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_transition.scss" />
+    <None Include="estilos\scss\bootstrap\mixins\_visibility.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_align.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_background.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_borders.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_clearfix.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_display.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_embed.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_flex.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_float.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_overflow.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_position.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_screenreaders.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_shadows.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_sizing.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_spacing.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_stretched-link.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_text.scss" />
+    <None Include="estilos\scss\bootstrap\utilities\_visibility.scss" />
+    <None Include="estilos\scss\bootstrap\vendor\_rfs.scss" />
+    <None Include="estilos\scss\bootstrap\_alert.scss" />
+    <None Include="estilos\scss\bootstrap\_badge.scss" />
+    <None Include="estilos\scss\bootstrap\_breadcrumb.scss" />
+    <None Include="estilos\scss\bootstrap\_button-group.scss" />
+    <None Include="estilos\scss\bootstrap\_buttons.scss" />
+    <None Include="estilos\scss\bootstrap\_card.scss" />
+    <None Include="estilos\scss\bootstrap\_carousel.scss" />
+    <None Include="estilos\scss\bootstrap\_close.scss" />
+    <None Include="estilos\scss\bootstrap\_code.scss" />
+    <None Include="estilos\scss\bootstrap\_custom-forms.scss" />
+    <None Include="estilos\scss\bootstrap\_dropdown.scss" />
+    <None Include="estilos\scss\bootstrap\_forms.scss" />
+    <None Include="estilos\scss\bootstrap\_functions.scss" />
+    <None Include="estilos\scss\bootstrap\_grid.scss" />
+    <None Include="estilos\scss\bootstrap\_images.scss" />
+    <None Include="estilos\scss\bootstrap\_input-group.scss" />
+    <None Include="estilos\scss\bootstrap\_jumbotron.scss" />
+    <None Include="estilos\scss\bootstrap\_list-group.scss" />
+    <None Include="estilos\scss\bootstrap\_media.scss" />
+    <None Include="estilos\scss\bootstrap\_mixins.scss" />
+    <None Include="estilos\scss\bootstrap\_modal.scss" />
+    <None Include="estilos\scss\bootstrap\_nav.scss" />
+    <None Include="estilos\scss\bootstrap\_navbar.scss" />
+    <None Include="estilos\scss\bootstrap\_pagination.scss" />
+    <None Include="estilos\scss\bootstrap\_popover.scss" />
+    <None Include="estilos\scss\bootstrap\_print.scss" />
+    <None Include="estilos\scss\bootstrap\_progress.scss" />
+    <None Include="estilos\scss\bootstrap\_reboot.scss" />
+    <None Include="estilos\scss\bootstrap\_root.scss" />
+    <None Include="estilos\scss\bootstrap\_spinners.scss" />
+    <None Include="estilos\scss\bootstrap\_tables.scss" />
+    <None Include="estilos\scss\bootstrap\_toasts.scss" />
+    <None Include="estilos\scss\bootstrap\_tooltip.scss" />
+    <None Include="estilos\scss\bootstrap\_transitions.scss" />
+    <None Include="estilos\scss\bootstrap\_type.scss" />
+    <None Include="estilos\scss\bootstrap\_utilities.scss" />
+    <None Include="estilos\scss\bootstrap\_variables.scss" />
+    <None Include="estilos\scss\style.scss" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14135</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

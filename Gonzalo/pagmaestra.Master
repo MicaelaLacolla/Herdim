@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pagmaestra.master.cs" Inherits="Gonzalo.pagmaestra" %>
+
+<%--Sacar<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">--%>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="estilos/css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(estilos/images/logo.jpg);"></a>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Clientes</a>
+	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                
+               
+                <li>
+                    <a href="paginados.aspx">Formulario cliente</a>
+                </li>
+                <li>
+                    <a href="abm.aspx">AMB cliente</a>
+                </li>
+	            </ul>
+	          </li>
+	       
+	          <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Inmuebles</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="Casas.aspx">Casas</a>
+                </li>
+                <li>
+                    <a href="Departamentos.aspx">Departamentos</a>
+                </li>
+                <li>
+                    <a href="Lotes.aspx">Lotes</a>
+                </li>
+              </ul>
+	          
+              	 <a href="VentaOalquiler.aspx">Transacciones</a>
+	            <ul class="collapse list-unstyled" id="Ul2"> </ul>
+
+                 <a href="abmInmuebles.aspx">ABM Transacciones</a>
+	            <ul class="collapse list-unstyled" id="Ul3"> </ul>
+
+
+
+	 <a href="Nosotros.aspx">Nosotros</a>
+	            <ul class="collapse list-unstyled" id="Ul1"> </ul>
+	        
+             
+
+	        <div class="footer"> Derechos reservados Herdin Inmobiliaria&copy; </footer>		              
+					
+	        </div>
+
+	      </div>
+    	</nav>
+
+
+
+
+<%--Poner aca arriba el html de <--%>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+
+    </form>
+     <%--   Poner la otra parte de html--%>
+</div>
+
+    <script src="estilos/js/jquery.min.js"></script>
+    <script src="estilos/js/popper.js"></script>
+    <script src="estilos/js/bootstrap.min.js"></script>
+    <script src="estilos/js/main.js"></script>
+  </body>
+</html>
